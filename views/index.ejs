@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Busy Bee</title>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <body>
+    <img src="pngfind.com-honeycomb-png-257810.png" alt="honeycomb pattern">
+    <section class="mainBox">
+      <h1>Bussyy Bee Calculator</h1>
+      <h4>Place a number in each textbox, then choose which math symbol you would like!</h4>
+
+      <form action="/history" method="POST">
+        <input type="text" name="num1" id="num1">
+        <input type="text" name="num2" id="num2">
+        <button id="add" value="+" name="plus">+</button>
+        <button id="subtract" value="-" name=<%="document.getElementById("historyTotal")"%>>-</button>
+        <button id="multiply" value="*" name="times">x</button>
+        <button id="divide" value="÷" name="over">÷</button>
+      </form>
+      <p id="result">??</p>
+
+      <h3>History</h3>
+      <ul class="history">
+      <% for(var i=0; i<history.length; i++) {%>
+        <li class="historyItem">
+          <span><%= history[i].num1 %></span>
+          <span><%= history[i].historyTotal %></span>
+          <span><%= history[i].num2 %></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+      <% } %>
+      </ul>
+
+    </section>
+  <script src="main.js"></script>
+</body>
+</html>

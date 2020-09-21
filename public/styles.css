@@ -1,0 +1,21 @@
+body{
+  background-image: url(bees.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: cursive;
+  text-decoration: none;
+}
+button{
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  width: 9%;
+}
+.mainBox{
+  border: 9px solid black;
+  text-align: center;
+  margin: -162px 428px auto 561px;
+  }
+img{
+  margin: -450px 0px 0px 1110px;
+}

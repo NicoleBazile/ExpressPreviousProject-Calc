@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BusyBee Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <img src="img/pngfind.com-honeycomb-png-257810.png" alt="honeycomb pattern">
+    <section class="mainBox">
+      <h1>Bussyy Bee Calculator</h1>
+      <h4>Place a number in each textbox, then choose which math symbol you would like!</h4>
+
+      <form action="/history" method="POST">
+        <input type="text" name="num1" id="num1">
+        <input type="text" name="num2" id="num2">
+        <button id="add" value="+">+</button>
+        <button id="subtract" value="-">-</button>
+        <button id="multiply" value="*">x</button>
+        <button id="divide" value="÷">÷</button>
+      </form>
+      <p id="result">??</p>
+
+      <h3>History</h3>
+      <ul class="history">
+      <% for(var i=0; i<history.length; i++) {%>
+        <li class="historyItem">
+          <span><%= history[i].num1 %></span>
+          <span><%= history[i].num2 %></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+      <% } %>
+      </ul>
+
+    </section>
+    <script src="#"></script>
+  </body>
+</html>
+
+
+<h1>🔥21 Savage🔥</h1>
+<h2>Why you trappin so hard?</h2>
+
+
+<h3>Messages</h3>
+<ul class="messages">
+<% for(var i=0; i<messages.length; i++) {%>
+<li class="message">
+  <span><%= messages[i].name %></span>
+  <span><%= messages[i].msg %></span>
+  <span><%= messages[i].thumbUp %></span>
+  <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+  <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+  <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+</li>
+<% } %>
+</ul>
+
+<section id=qaBox>
+<h2>Add a message</h2>
+<form action="/messages" method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="message" name="msg">
+  <button type="submit">Submit</button>
+</form>
+</section> -->
